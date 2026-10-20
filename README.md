@@ -10,7 +10,7 @@
 
 🎧 **試聴:** [`samples/sample.wav`](samples/sample.wav)（Lemon進行 × 8ビート、seed=42）
 
-<!-- GUIのスクリーンショットを docs/images/gui.png に置いたら、ここに貼る -->
+<img src="docs/images/gui.png" width="300" alt="GUI版の画面">
 
 ## クイックスタート
 
