@@ -25,9 +25,8 @@ def _add(buffer, sound, start_sec):
         buffer[start:end] += sound[: end - start]
 
 
-# =====================
+
 # 音色
-# =====================
 
 def _tone(note, duration_sec, harmonics=(1.0, 0.3), attack=0.01, release=0.08):
     """サイン波＋倍音の単純な音。アタックとリリースでプチプチ音を防ぐ。"""
@@ -71,10 +70,7 @@ def _hat(rng):
     return noise * np.exp(-t / 0.02)
 
 
-# =====================
 # 書き出し
-# =====================
-
 def render_wav(
     melody,
     chords,
