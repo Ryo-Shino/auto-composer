@@ -32,9 +32,7 @@ def build_midi(
     for track in (MELODY_TRACK, CHORD_TRACK, DRUM_TRACK):
         midi.addTempo(track, 0, TEMPO)
 
-    # =====================
     # メロディ
-    # =====================
     if export_melody:
         melody_time = 0
 
@@ -45,9 +43,8 @@ def build_midi(
             )
             melody_time += duration
 
-    # =====================
+    
     # コード（1コード = 1小節）
-    # =====================
     if export_chords:
         chord_time = 0
 
@@ -59,9 +56,7 @@ def build_midi(
                 )
             chord_time += BEATS_PER_MEASURE
 
-    # =====================
     # ドラム
-    # =====================
     if export_drums:
         for measure in range(len(chords)):
             for drum_name, beat in drums:
@@ -69,7 +64,7 @@ def build_midi(
                     DRUM_TRACK, DRUM_CHANNEL,
                     DRUM_NOTES[drum_name],
                     measure * BEATS_PER_MEASURE + beat,
-                    0.1,    # ドラムは音の長さが関係ないので短くしておく
+                    0.1,    # ドラムは音の長さが関係ないので短めに設定
                     VOLUME,
                 )
 
