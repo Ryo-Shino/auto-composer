@@ -1,6 +1,7 @@
 from midiutil import MIDIFile
 
-TEMPO = 120          # テンポはDAW側で自由に変えられるので固定値でOK
+# テンポはDAW側で任意に変更可。
+TEMPO = 120          
 VOLUME = 100
 BEATS_PER_MEASURE = 4
 
