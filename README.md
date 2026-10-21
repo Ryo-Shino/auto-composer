@@ -9,6 +9,7 @@
 > 上の画像は `python demo.py`（seed=42）の出力です。
 
 🎧 **試聴:** [`samples/sample.wav`](samples/sample.wav)（Lemon進行 × 8ビート、seed=42）
+※ GitHub上では再生できないため、ダウンロードして再生してください。
 
 <img src="docs/images/gui.png" width="300" alt="GUI版の画面">
 
